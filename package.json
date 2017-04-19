@@ -1,0 +1,24 @@
+{
+  "name": "blogapi",
+  "version": "0.0.0",
+  "description": "Blog Api Challenge",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"# blogapi\" >> README.md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thien-pham/blogapi.git"
+  },
+  "author": "Thien & Zach",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thien-pham/blogapi/issues"
+  },
+  "homepage": "https://github.com/thien-pham/blogapi#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "uuid": "^3.0.1"
+  }
+}
