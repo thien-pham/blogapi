@@ -41,7 +41,7 @@ const BlogPosts = {
   },
   delete: function(id) {
     const postIndex = this.posts.findIndex(
-      post => post.id === id);
+      post => post.id == id);
     if (postIndex > -1) {
       this.posts.splice(postIndex, 1);
     }
@@ -61,8 +61,8 @@ const BlogPosts = {
 };
 
 function createBlogPostsModel() {
-  const storage = Object.create(BlogPosts);
-  storage.posts = [1, 2, 3, 4, 5];
+  let storage = Object.create(BlogPosts);
+  storage.posts = [];
   return storage;
 }
 
