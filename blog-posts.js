@@ -32,8 +32,8 @@ router.put('/:id', (req, res) => {
   res.status(201).end();
 });
 
-router.delete('/', (req,res) =>{
-  model.BlogPosts.delete(req.query.id);
+router.delete('/:id', (req,res) =>{
+  model.BlogPosts.delete(req.params.id);
   res.status(204).end();
 });
 
